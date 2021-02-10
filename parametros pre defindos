@@ -1,0 +1,16 @@
+function calculaarea(base, altura,forma='q'){
+switch(fomra){
+    case'q'://quadrilatero
+    return base*altura
+    braek
+    case't'://triangulo
+    return base*altura/2
+    braek
+    case'e'://elipse
+    return (base/2)*(altura/2)*match.pi
+}
+}
+console.log(calculaarea(2,3,'q'))
+console.log(calculaarea(5,3,'t'))
+console.log(calculaarea(4.5,4.5,'e'))
+console.log(calculaarea(10,13))

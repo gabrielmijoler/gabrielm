@@ -1,0 +1,42 @@
+let carro ={
+    marca:'volkswagen',
+    modelo: 'fusca',
+    ano: 1969,
+    cor: 'preto'
+}//ojeto
+
+//desestruturação do vetor
+let[x,y,z] = numeros
+console.log(x)
+console.log(y)
+console.log(z)
+
+//desestruturacao parcial do vetor
+//pegar apenas segundo valor
+let[,c,,] = numeros
+console.log(c)
+
+//pegando apenas dois primeiros valores
+
+let[a,b] = numeros
+console.log(a)
+console.log(b)
+
+//desustruração de ojeto
+// ao nome das propriedades do objeto, a ordem das variaveis é diferente
+/*let{modelo,carro,cor,marca} = carro
+console.log(marca)
+console.log(modelo)
+console.log(ano)
+console.log(cor)*/
+
+// desustruração parcial: basta passar apenas o nome da propriedade desejada
+// nao é possivel dar let para as variaveis pq isso ja foi feito na linha 29
+let {marcar, ano} = carro
+console.log(marca)
+console.log(ano)
+
+// renomeando variaveis ao desestruturação um objeto
+let {brand: marca, year: ano} = carro
+console.log(brand)
+console.log(year)
